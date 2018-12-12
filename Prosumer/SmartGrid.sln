@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProsumerInfo", "Prosumer\ProsumerInfo.csproj", "{479E2E6A-1694-4EB4-9EF0-5784D9042A96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProsumerInfo", "Prosumer\ProsumerInfo.csproj", "{479E2E6A-1694-4EB4-9EF0-5784D9042A96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartgridInfo", "SmartgridInfo\SmartgridInfo.csproj", "{7D1C851C-A37E-4CAC-8B15-0DFBAD948EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartgridInfo", "SmartgridInfo\SmartgridInfo.csproj", "{7D1C851C-A37E-4CAC-8B15-0DFBAD948EAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraderInfo", "TraderInfo\TraderInfo.csproj", "{E0692788-966B-4480-B8EA-4DA5C64D4B52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraderInfo", "TraderInfo\TraderInfo.csproj", "{E0692788-966B-4480-B8EA-4DA5C64D4B52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
