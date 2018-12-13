@@ -9,9 +9,9 @@ namespace ProsumerInfo.Models
     public class Prosumer
     {
 
-        private long id { set; get; }
+        public long id { set; get; }
         private string prosumerType { set; get; }
-        private string X10_ID { set; get; }
+        private string x10_ID { set; get; }
 
         public Consumption consumption;
         public Production production;
@@ -25,6 +25,16 @@ namespace ProsumerInfo.Models
             X10_ID = X10ID;
         }
 
+        public Prosumer() { }
+
+        public string ProsumerType { 
+            set{ prosumerType = value; }
+            get { return prosumerType; }
+        }
+        public string X10_ID {
+            set { x10_ID = value; }
+            get { return x10_ID; }
+        }
 
     }
 }

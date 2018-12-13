@@ -34,7 +34,7 @@ namespace ProsumerInfo.Models
             get { return pc_Timestamp; }
             set { pc_Timestamp = value; }
        }
-        private string ProsumerBalance
+        public string ProsumerBalance
         {
             set {prosumerBalance = value; }
             get { return prosumerBalance; }

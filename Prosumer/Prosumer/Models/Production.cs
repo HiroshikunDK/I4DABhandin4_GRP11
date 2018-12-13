@@ -8,8 +8,8 @@ namespace ProsumerInfo.Models
     public class Production
     {
         
-        private string KWH { set; get; }
-        private string ProductionTime { set; get; }
+        private string kwh { set; get; }
+        private string productionTime { set; get; }
 
         public long _prosumerID;
         public Prosumer _prosumer;
@@ -19,6 +19,20 @@ namespace ProsumerInfo.Models
         {
             KWH = kwh.ToString();
             ProductionTime = timestamp.ToShortTimeString();
+        }
+
+        public Production()
+        {}
+
+
+        public string KWH {
+            set { kwh = value; }
+            get { return kwh; }
+        }
+
+        public string ProductionTime {
+            set { productionTime = value; }
+            get { return productionTime; }
         }
     }
 }

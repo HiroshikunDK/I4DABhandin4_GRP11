@@ -9,7 +9,7 @@ namespace ProsumerInfo.Models
     {
         public long id { set; get; }
 
-        private string KWH { set; get; } 
+        private string kwh { set; get; } 
         private string consumption_time { set; get; }
 
         public long _ProsumerID;
@@ -18,8 +18,20 @@ namespace ProsumerInfo.Models
         public Consumption(float kwh, DateTime timestamp)
         {
             KWH = kwh.ToString();
-            consumption_time = timestamp.ToShortTimeString();
+            Consumption_time = timestamp.ToShortTimeString();
         }
-       
+
+        public Consumption()
+        {
+        }
+
+        public string KWH {
+            set { kwh = value; }
+            get { return kwh; }
+        }
+        public string Consumption_time {
+            set { consumption_time = value; }
+            get { return consumption_time; }
+        }
     }
 }

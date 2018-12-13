@@ -13,8 +13,8 @@ namespace ProsumerInfo.Models.DTO
         public string PC_Timestamp { set; get; }
         [JsonRequired]
         public string ProsumerBalance { set; get; }
-        [JsonRequired]
 
+        [JsonRequired]
         public ProsumerDTO prosumer;
     }
 
