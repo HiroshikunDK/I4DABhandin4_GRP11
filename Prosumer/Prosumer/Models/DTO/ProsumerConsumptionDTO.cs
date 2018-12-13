@@ -14,6 +14,7 @@ namespace ProsumerInfo.Models.DTO
         [JsonRequired]
         public string ProsumerBalance { set; get; }
         [JsonRequired]
+
         public ProsumerDTO prosumer;
     }
 

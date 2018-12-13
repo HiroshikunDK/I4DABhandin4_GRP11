@@ -9,18 +9,37 @@ namespace ProsumerInfo.Models
     {
         public long id { set; get; }
 
-        private string PC_Timestamp { set; get; }
-        private string ProsumerBalance { set; get; }
+        private string pc_Timestamp { set; get; }
+        private string prosumerBalance { set; get; }
 
         public long prosumerID;
         public Prosumer _prosumer;
+
+        #region Constructors
 
         public ProsumerConsumption(DateTime timestamp, float balance)
         {
             PC_Timestamp = timestamp.ToShortTimeString();
             ProsumerBalance = balance.ToString();
         }
+        public ProsumerConsumption()
+        {
+        }
 
+        #endregion
+
+        #region Properties 
+       public string PC_Timestamp
+       {
+            get { return pc_Timestamp; }
+            set { pc_Timestamp = value; }
+       }
+        private string ProsumerBalance
+        {
+            set {prosumerBalance = value; }
+            get { return prosumerBalance; }
+        }
+        #endregion
 
     }
 }
