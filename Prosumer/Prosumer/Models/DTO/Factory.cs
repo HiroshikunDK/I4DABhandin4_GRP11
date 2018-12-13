@@ -37,45 +37,26 @@ namespace ProsumerInfo.Models.DTO
         return dto;
         }
 
-        public ConsumptionDTO CreateSingleConsumptionDTO(Consumption consumption)
+        public ConsumptionSingleDTO CreateSingleConsumptionDTO(Consumption consumption, Prosumer prosumer)
         {
-            var dto = new ConsumptionDTO
+            var dto = new ConsumptionSingleDTO
             {
+                
                 KWH = consumption.KWH,
-                ConsumptionTime = consumption.Consumption_time
+                ConsumptionTime = consumption.Consumption_time,
+                _prosumerID = prosumer.id
             };
             return dto;
         }
 
-        public ProductionDTO CreateSingleProductionDTO(Production production)
+        public ProductionSingleDTO CreateSingleProductionDTO(Production production, Prosumer prosumer)
         {
 
-            var dto = new ProductionDTO
+            var dto = new ProductionSingleDTO
             {
                 KWH = production.KWH,
-                ProductionTime = production.ProductionTime
-            };
-            return dto;
-        }
-
-        public ProsumerDTO CreateSingleProsumerDTO(Prosumer prosumer)
-        {
-            var dto = new ProsumerDTO
-            {
-                prosumerType = prosumer.ProsumerType,
-                X10_ID = prosumer.X10_ID,
-
-                consumption = new ConsumptionDTO
-                {
-                    KWH = prosumer.consumption.KWH,
-                    ConsumptionTime = prosumer.consumption.Consumption_time
-                },
-
-                production = new ProductionDTO
-                {
-                    KWH = prosumer.production.KWH,
-                    ProductionTime = prosumer.production.ProductionTime
-                }
+                ProductionTime = production.ProductionTime,
+                _prosumerID = prosumer.id
             };
             return dto;
         }

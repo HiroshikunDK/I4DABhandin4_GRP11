@@ -10,10 +10,9 @@ namespace ProsumerInfo.Models.DTOinterface
 {
     interface IFactory
     {
-        ProsumerConsumptionDTO CreateProsumerConsumptionDTO(ProsumerConsumption prosumerconsumption);
-        ProsumerDTO CreateSingleProsumerDTO(Prosumer prosumer);
-        ProductionDTO CreateSingleProductionDTO(Production production);
-        ConsumptionDTO CreateSingleConsumptionDTO(Consumption consumption);
+        ProsumerConsumptionFullDTO CreateProsumerConsumptionDTO(ProsumerConsumption prosumerconsumption);
+        ProductionSingleDTO CreateSingleProductionDTO(Production production, Prosumer prosumer);
+        ConsumptionSingleDTO CreateSingleConsumptionDTO(Consumption consumption, Prosumer prosumer);
        
     }
 }

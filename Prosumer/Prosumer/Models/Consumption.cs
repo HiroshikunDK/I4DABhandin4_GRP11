@@ -7,13 +7,13 @@ namespace ProsumerInfo.Models
 {
     public class Consumption
     {
-        public long id { set; get; }
-
         private string kwh { set; get; } 
         private string consumption_time { set; get; }
 
-        public long _ProsumerID;
+        public long _prosumerID;
         public Prosumer _prosumer;
+
+        public long id { set; get; }
 
         public Consumption(float kwh, DateTime timestamp)
         {

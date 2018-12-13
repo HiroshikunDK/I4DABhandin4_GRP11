@@ -8,6 +8,7 @@ namespace ProsumerInfo.Models.DTO
 {
     public class ProsumerConsumptionFullDTO
     {
+        
         public long id { set; get; }
         [JsonRequired]
         public string PC_Timestamp { set; get; }
@@ -20,6 +21,7 @@ namespace ProsumerInfo.Models.DTO
 
     public class ProsumerDTO
     {
+        long id { set; get; }
         [JsonRequired]
         public string prosumerType { set; get; }
         [JsonRequired]
@@ -36,6 +38,7 @@ namespace ProsumerInfo.Models.DTO
 
     public class ConsumptionDTO
     {
+        long id { set; get; }
         [JsonRequired]
         public string KWH { set; get; }
         [JsonRequired]
@@ -43,9 +46,28 @@ namespace ProsumerInfo.Models.DTO
     }
     public class ProductionDTO
     {
+        long id { set; get; }
         [JsonRequired]
         public string KWH { set; get; }
         [JsonRequired]
         public string ProductionTime { set; get; }
+    }
+    public class ConsumptionSingleDTO
+    {
+        [JsonRequired]
+        public string KWH { set; get; }
+        [JsonRequired]
+        public string ConsumptionTime { set; get; }
+        [JsonRequired]
+        public long _prosumerID { set; get; }
+    }
+    public class ProductionSingleDTO
+    {
+        [JsonRequired]
+        public string KWH { set; get; }
+        [JsonRequired]
+        public string ProductionTime { set; get; }
+        [JsonRequired]
+        public long _prosumerID { set; get; }
     }
 }
