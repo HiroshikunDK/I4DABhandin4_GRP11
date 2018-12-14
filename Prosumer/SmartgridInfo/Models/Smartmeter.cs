@@ -11,8 +11,8 @@ namespace SmartgridInfo.Models
         private string smID { set; get; }
 
 
-        public VillageSmartGrid _villageSmartGrid { set; get; }
-        public long vsgID { set; get; }
+        //public VillageSmartGrid _villageSmartGrid { set; get; }
+        //public long vsgID { set; get; }
 
         public Request _request { set; get; }
         public long _reqID { set; get; }
