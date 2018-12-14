@@ -14,5 +14,8 @@ namespace ProsumerInfo.Models
         }
 
         public DbSet<ProsumerInfo.Models.ProsumerConsumption> ProsumerConsumption { get; set; }
+        public DbSet<ProsumerInfo.Models.Prosumer> Prosumer { get; set; }
+        public DbSet<ProsumerInfo.Models.Production> Production { get; set; }
+        public DbSet<ProsumerInfo.Models.Consumption> Consumption { get; set; }
     }
 }
