@@ -11,8 +11,8 @@ namespace SmartgridInfo.Models
         private string _powerBalance { set; get; }
         private string _timestamp { set; get; }
 
-        public long _smID { set; get; }
-        public Smartmeter _smartmeter { set; get; }
+        //public long _smID { set; get; }
+        //public Smartmeter _smartmeter { set; get; }
 
         public long ID
         {
