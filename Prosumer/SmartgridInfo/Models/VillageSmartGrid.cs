@@ -27,7 +27,7 @@ namespace SmartgridInfo.Models
         public long ID {
             set { id = value; }
             get { return id; } }
-        private string Name {
+        public string Name {
             set { _name = value; }
             get { return _name; } }
     }

@@ -12,11 +12,7 @@ namespace SmartgridInfo.Models.DTO
         [JsonRequired]
         public string Name { set; get; }
         [JsonRequired]
-        public long BreakerID { set; get; }
-        [JsonRequired]
-        public BreakerDTO Breaker { set; get; }
-        [JsonRequired]
-        public long smID { set; get; }
+        public BreakerDTO _breaker { set; get; }
         [JsonRequired]
         public SmartMeterDTO smartmeter { set; get; }
     }
@@ -37,61 +33,39 @@ namespace SmartgridInfo.Models.DTO
         [JsonRequired]
         public string sm_ID { set; get; }
         [JsonRequired]
-        public long reqID { set; get; }
-        [JsonRequired]
         public RequestDTO _request { set; get; }
 
     }
     public class RequestDTO
     {
         public long id{ set; get;}
+        [JsonRequired]
         public string Balance { set; get; }
+        [JsonRequired]
+        public string _timestamp { set; get; }
     }
-}
 
-public class ProsumerConsumptionFullDTO
-{
+    public class BreakerSingleDTO
+    {
+        public long id { set; get; }
+        [JsonRequired]
+        public string BreakerID { set; get; }
+        [JsonRequired]
+        public string Connection1 { set; get; }
+        [JsonRequired]
+        public string Connection2 { set; get; }
+        [JsonRequired]
+        public long VSGID { set; get; }
+    }
 
-    public long id { set; get; }
-    [JsonRequired]
-    public string PC_Timestamp { set; get; }
-    [JsonRequired]
-    public string ProsumerBalance { set; get; }
-
-    [JsonRequired]
-    public ProsumerDTO Prosumer { set; get; }
-}
-
-public class ProsumerDTO
-{
-    long id { set; get; }
-    [JsonRequired]
-    public string prosumerType { set; get; }
-    [JsonRequired]
-    public string X10_ID { set; get; }
-
-    //Underlaying elements
-
-    [JsonRequired]
-    public ConsumptionDTO consumption { set; get; }
-    [JsonRequired]
-    public ProductionDTO production { set; get; }
-
-}
-
-public class ConsumptionDTO
-{
-    long id { set; get; }
-    [JsonRequired]
-    public string KWH { set; get; }
-    [JsonRequired]
-    public string ConsumptionTime { set; get; }
-}
-public class ProductionDTO
-{
-    long id { set; get; }
-    [JsonRequired]
-    public string KWH { set; get; }
-    [JsonRequired]
-    public string ProductionTime { set; get; }
+    public class RequestSingleDTO
+    {
+        public long id { set; get; }
+        [JsonRequired]
+        public string Balance { set; get; }
+        [JsonRequired]
+        public string _timestamp { set; get; }
+        [JsonRequired]
+        public long _samrtmeterID { set; get; }
+    }
 }

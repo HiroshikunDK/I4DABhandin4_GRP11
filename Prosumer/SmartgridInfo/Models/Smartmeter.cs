@@ -8,6 +8,7 @@ namespace SmartgridInfo.Models
     public class Smartmeter
     {
         private long id { set; get; }
+        private string smID { set; get; }
 
 
         public VillageSmartGrid _villageSmartGrid { set; get; }
@@ -20,6 +21,11 @@ namespace SmartgridInfo.Models
         {
             set { id = value; }
             get { return id; }
+        }
+        public string SMID
+        {
+            set { smID = value; }
+            get { return smID; }
         }
     }
 }

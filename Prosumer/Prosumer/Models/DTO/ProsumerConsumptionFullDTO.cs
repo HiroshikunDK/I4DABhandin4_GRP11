@@ -8,7 +8,7 @@ namespace ProsumerInfo.Models.DTO
 {
     public class ProsumerConsumptionFullDTO
     {
-        
+        [JsonProperty]
         public long id { set; get; }
         [JsonRequired]
         public string PC_Timestamp { set; get; }
